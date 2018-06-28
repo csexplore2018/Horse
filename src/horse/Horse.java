@@ -31,6 +31,12 @@ public class Horse {
         Stallion s = new Stallion();
         System.out.println(s.name);
         s.talk();
+        
+       Centaur c = new Centaur();
+        System.out.println(c.name);
+        c.talk();
+        c.hunt();
+        
     }
     
 }
@@ -58,8 +64,21 @@ class Mare extends Animal {
 
 class Stallion extends Mare {
     
-    public String name = "Rambo";
+    public String name = "Peanut Butter";
     
+}
+
+class Centaur extends Stallion {
+    
+    public String food="Deer";
+    public String name = "my name is Thresher ";
+    public void talk() {
+        System.out.println("Hello");
+    }
+    
+     public void hunt() {
+        System.out.println("I have shot a" + food);
+    }
 }
 
     
