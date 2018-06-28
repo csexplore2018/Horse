@@ -85,16 +85,33 @@ class Centaur extends Stallion {
     }
 }
 
-class Unicorn extends Mare {
+class Unicorn extends Mare implements Actions {
 
-    public String name = " Buttercup";
+    public String name = "Buttercup";
 
-    public String food= " Magic ";
+    public String food= "Magic ";
     
- public void talk() {
+    public void talk() {
         System.out.println("Majestic Neigh");
     }
+    public void eat() {
+        System.out.println("Majestic Sparkle Chomp");
+    }
+    public void sleep() {
+        System.out.println("Majestic snore");
+    }
+    public void move() {
+        System.out.println("Majestic prance");
+    }
+
 
 }
 // These are new comments
 // READY THE HOLY HANDGRENADE! //
+
+interface Actions {
+    public void eat();
+    public void sleep();
+    public void move();
+    public void talk();
+}
