@@ -32,10 +32,14 @@ public class Horse {
         System.out.println(s.name);
         s.talk();
         
-       Centaur c = new Centaur();
+        Centaur c = new Centaur();
         System.out.println(c.name);
         c.talk();
         c.hunt();
+        
+        Unicorn g = new Unicorn();
+        System.out.println(g.name);
+        g.talk();
         
     }
     
@@ -77,11 +81,16 @@ class Centaur extends Stallion {
     }
     
      public void hunt() {
-        System.out.println("I have shot a" + food);
+        System.out.println("I have shot a " + food);
     }
 }
 
-    
+class Unicorn extends Mare {
 
+    public String name = " Buttercup";
 
+ public void talk() {
+        System.out.println("Majestic Neigh");
+    }
 
+}
