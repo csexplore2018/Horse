@@ -89,6 +89,8 @@ class Unicorn extends Mare {
 
     public String name = " Buttercup";
 
+    public String food= " Magic ";
+    
  public void talk() {
         System.out.println("Majestic Neigh");
     }
