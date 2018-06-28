@@ -96,6 +96,4 @@ class Unicorn extends Mare {
     }
 
 }
-//Test 1//
-//  ulol si adi
-// test 2
+// These are new comments
